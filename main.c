@@ -6,14 +6,14 @@ void main ()
 {
 	setlocale(LC_ALL, "Russian");
 	
-	printf("Ââåäèòå êîýôôèöèåíòû a, b, c:\n");
+	printf("Введите коэффициенты a, b, c:\n");
 	float a, b, c;
 	scanf("%f %f %f", &a, &b, &c);
 	float d;
 	d = b * b - 4 * a * c;
 	float x1, x2;
 	if (!a)
-		printf("\nÊîýôôèöèåíò a íå äîëæåí áûòü ðàâåí 0\n");
+		printf("\nКоэффициент a не должен быть равен 0\n");
 	else
 		if (d > 0)
 		{
@@ -28,5 +28,5 @@ void main ()
 				printf("x1 = x2 = %.3f\n", x1);
 			}
 			else
-				printf("\nÎòðèöàòåëüíûé äèñêðèìèíàíò\n");
+				printf("\nОтрицательный дискриминант\n");
 }
