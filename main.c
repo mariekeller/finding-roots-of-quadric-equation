@@ -1,18 +1,18 @@
-#include <stdio.h>
+п»ї#include <stdio.h>
 #include <math.h>
 #include <locale.h>
 
 void main ()
 {
 	setlocale(LC_ALL, "Russian");
-	printf("Введите коэффициенты a, b, c:\n");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®ГЅГґГґГЁГ¶ГЁГҐГ­ГІГ» a, b, c:\n");
 	float a, b, c;
 	scanf("%f %f %f", &a, &b, &c);
 	float d;
 	d = b * b - 4 * a * c;
 	float x1, x2;
 	if (!a)
-		printf("\nКоэффициент a не должен быть равен 0\n");
+		printf("\nГЉГ®ГЅГґГґГЁГ¶ГЁГҐГ­ГІ a Г­ГҐ Г¤Г®Г«Г¦ГҐГ­ ГЎГ»ГІГј Г°Г ГўГҐГ­ 0\n");
 	else
 		if (d > 0)
 		{
@@ -27,5 +27,5 @@ void main ()
 				printf("x1 = x2 = %.3f\n", x1);
 			}
 			else
-				printf("\nОтрицательный дискриминант\n");
+				printf("\nГЋГІГ°ГЁГ¶Г ГІГҐГ«ГјГ­Г»Г© Г¤ГЁГ±ГЄГ°ГЁГ¬ГЁГ­Г Г­ГІ\n");
 }
