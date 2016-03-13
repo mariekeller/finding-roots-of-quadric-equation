@@ -5,6 +5,7 @@
 void main ()
 {
 	setlocale(LC_ALL, "Russian");
+	
 	printf("Ââåäèòå êîýôôèöèåíòû a, b, c:\n");
 	float a, b, c;
 	scanf("%f %f %f", &a, &b, &c);
