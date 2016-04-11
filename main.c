@@ -14,24 +14,23 @@ int main ()
 	if (!a)
 	{
 		printf("\nКоэффициент a не должен быть равен 0\n");
-		return 0;
+		return 1;
 	}
 	if (d > 0)
 	{
 		x1 = (-b + sqrt(d)) / (2 * a);
 		x2 = (-b - sqrt(d)) / (2 * a);
 		printf("\nx1 = %.3f, x2 = %.3f\n",x1, x2);
-		return 1;
+		return 0;
 	}
 	if (d == 0)
 	{
 		x1 = x2 = -b / (2 * a);
 		printf("x1 = x2 = %.3f\n", x1);
-		return 1;
+		return 0;
 	}
-	else
 	{
 		printf("\nОтрицательный дискриминант\n");
-		return 0;
+		return 1;
 	}
 }
